@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="favicon.svg" width="80" height="80" alt="dcamp" />
+</p>
+
 # dcamp Design System
 
 batchIntelli 프로젝트의 UI 디자인 시스템 스킬입니다.
