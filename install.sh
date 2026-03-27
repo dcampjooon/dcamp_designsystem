@@ -27,6 +27,9 @@ curl -fsSL "${BASE_URL}/skills/ui-standards/references/component-patterns.md" -o
 echo "Downloading chart-standards.md..."
 curl -fsSL "${BASE_URL}/skills/ui-standards/references/chart-standards.md" -o "${SKILL_DIR}/references/chart-standards.md"
 
+echo "Downloading app-scaffold.md..."
+curl -fsSL "${BASE_URL}/skills/ui-standards/references/app-scaffold.md" -o "${SKILL_DIR}/references/app-scaffold.md"
+
 echo ""
 echo "Installed to: ${SKILL_DIR}"
 echo ""

@@ -1,7 +1,7 @@
 ---
 name: ui-standards
 description: batchIntelli UI 디자인 시스템. 프론트엔드 코드 작성 시 자동 적용 — 색상, 폰트, 레이아웃, 컴포넌트 패턴, 차트 규칙.
-user-invocable: false
+user-invocable: true
 ---
 
 # batchIntelli UI Design System
@@ -96,3 +96,4 @@ src/lib/operations/format.ts             — 포맷팅 + 차트 색상/스타일
 - 디자인 토큰 (색상, 폰트, 간격, 반경): `references/design-system.md`
 - 14종 반복 UI 패턴 + 코드 예제: `references/component-patterns.md`
 - Recharts 차트 규칙 + 색상 팔레트: `references/chart-standards.md`
+- 앱 초기 셋업 (인증, 레이아웃, 다크모드): `references/app-scaffold.md`

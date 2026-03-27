@@ -44,7 +44,7 @@ cp -r dcamp_designsystem/skills/ui-standards ~/.claude/skills/ui-standards
 
 ## 적용 방식
 
-이 스킬은 `user-invocable: false`로 설정되어 있어서, **별도 호출 없이 프론트엔드 코드 작성 시 자동 적용**됩니다.
+이 스킬은 **자동 적용 + 수동 호출** 모두 지원합니다. 프론트엔드 코드 작성 시 자동 로드되며, `/ui-standards`로 직접 호출할 수도 있습니다.
 
 ### 글로벌 설치 (위 방법대로 설치한 경우)
 
@@ -140,7 +140,8 @@ skills/ui-standards/
 └── references/
     ├── design-system.md              # 디자인 토큰 (색상, 폰트, 간격)
     ├── component-patterns.md         # 14종 반복 UI 패턴 + 코드 예제
-    └── chart-standards.md            # Recharts 차트 규칙 + 색상 팔레트
+    ├── chart-standards.md            # Recharts 차트 규칙 + 색상 팔레트
+    └── app-scaffold.md               # 앱 초기 셋업 (인증, 레이아웃, 다크모드)
 ```
 
 ## 포함된 내용
@@ -161,6 +162,14 @@ Responsive Grid, Sidebar Navigation, Lazy Chart Loading
 - 색상 팔레트 (BATCH_COLORS, INDUSTRY_COLORS, LOCATION_COLORS)
 - 차트 유형별 패턴 (수직/수평 막대, 라인, 산점도)
 - Lazy loading 등록 절차
+
+### 앱 초기 셋업 (App Scaffold)
+- Root Layout + Pretendard 폰트 + ThemeProvider
+- SSO 로그인 페이지 (Google OAuth + Magic Link)
+- 대시보드 레이아웃 (사이드바 + 헤더 + 모바일 대응)
+- 사이드바 하단 (사용자 이메일, 로그아웃, 다크모드 토글)
+- Supabase 인증 (Browser/Server 클라이언트 + Middleware + OAuth Callback)
+- 필수 환경 변수 + 패키지 목록
 
 ## 기술 스택
 
